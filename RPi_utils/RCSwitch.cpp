@@ -37,7 +37,7 @@ RCSwitch::RCSwitch() {
   this->nReceiverInterrupt = -1;
   this->nTransmitterPin = -1;
   RCSwitch::nReceivedValue = NULL;
-  this->setPulseLength(350);
+  this->setPulseLength(186);  //Changed to match the Etekcity outlets
   this->setRepeatTransmit(10);
   this->setReceiveTolerance(60);
   this->setProtocol(1);
@@ -49,7 +49,7 @@ RCSwitch::RCSwitch() {
 void RCSwitch::setProtocol(int nProtocol) {
   this->nProtocol = nProtocol;
   if (nProtocol == 1){
-	  this->setPulseLength(350);
+	  this->setPulseLength(186); //Changed to match the Etekcity outlets
   }
   else if (nProtocol == 2) {
 	  this->setPulseLength(650);
