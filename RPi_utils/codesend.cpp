@@ -18,10 +18,10 @@
 
 int main(int argc, char *argv[]) {
     
-    // This pin is not the first pin on the RPi GPIO header!
+    // This is the pin for the TX according to the WiringPi numbering system
     // Consult https://projects.drogon.net/raspberry-pi/wiringpi/pins/
     // for more information.
-    int PIN = 0;
+    int PIN = 1; //Changed to from the default to WiringPi pin #1 (RPI pin # 12).
     
     // Parse the firt parameter to this command as an integer
     int code = atoi(argv[1]);
